@@ -1,0 +1,5 @@
+package com.sathya.springbootmvc.employeemodel;
+
+public class EmployeeModel {
+
+}

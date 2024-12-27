@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Search</title>
+	</head>
+	<body>
+		<h2>Search for a employee</h2>
+		<form th:action="@{searchById}" method="post">
+			<label>Enter Id:</label>
+			<input type="number" name="id">
+			<button type="submit">Search</button>
+		</form>
+		<div th:if="${employee != null}">
+			<h3>employee Details</h3>
+			<p>
+				<strong>Emp ID:</strong><span th:text="${employee.id}"></span>
+			</p>
+			<p>
+				<strong>Emp Name:</strong><span th:text="${employee.empName}"></span>
+			</p>
+			<p>
+				<strong>Emp DOB:</strong><span th:text="${employee.empDOB}"></span>
+			</p>
+			<p>
+				<strong>Emp Gender:</strong><span th:text="${employee.gender}"></span>
+			</p>
+			<p>
+				<strong>Emp Salary:</strong><span th:text="${employee.empBasicSalary}"></span>
+			</p>
+			<p>
+				<strong>Emp Department:</strong><span th:text="${employee.department}"></span>
+			</p>
+			<p>
+				<strong>Emp Experience:</strong><span th:text="${employee.experience}"></span>
+			</p>
+			<p>
+				<strong>Emp Hra:</strong><span th:text="${employee.hra}"></span>
+			</p>
+			<p>
+				<strong>Emp Da:</strong><span th:text="${employee.da}"></span>
+			</p>
+			<p>
+				<strong>Emp pf:</strong><span th:text="${employee.pf}"></span>
+			</p>
+			<p>
+				<strong>Emp TotalSalary</strong><span th:text="${employee.totalSalary}"></span>
+			</p>
+						
+		</div>
+		<div th:if="${employee == null}">
+			<p>No employee found with the given ID</p>
+		</div>
+	</body>
+</html>

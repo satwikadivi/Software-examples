@@ -1,0 +1,2 @@
+spring.application.name=SpringBootProject-2
+server.port=2222

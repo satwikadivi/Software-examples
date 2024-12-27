@@ -1,0 +1,31 @@
+package com.sathya.springbootmvc.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.sathya.springbootmvc.entity.EmployeeEntity;
+import com.sathya.springbootmvc.repository.EmployeeRepository;
+
+@Service
+public class EmployeeService {
+    @Autowired
+    EmployeeRepository employeeRepository;
+
+	public List<EmployeeEntity> getAllEmployees() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public EmployeeEntity searchById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void deleteEmployeeById(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

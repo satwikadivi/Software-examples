@@ -1,0 +1,5 @@
+package com.sathya.springbootmvc.productmodel;
+
+public class ProductModel {
+
+}

@@ -1,0 +1,11 @@
+<html>
+	<head>
+		<titl>Employee form</titl>
+	</head>
+	<body>
+		<h1>Employee form</h1>
+		<form th:action="@{/saveemployee}" method="post">
+			
+		</form>
+	</body>
+</html>
